@@ -1,5 +1,6 @@
-import 'package:calendar_view/calendar_view.dart';
 import 'package:flutter/material.dart';
+
+import '../widgets/day_view_widget.dart';
 
 class DayViewPage extends StatelessWidget {
   const DayViewPage({super.key});
@@ -7,7 +8,7 @@ class DayViewPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: DayView(),
+      body: DayViewWidget(),
     );
   }
 }

@@ -1,5 +1,6 @@
-import 'package:calendar_view/calendar_view.dart';
 import 'package:flutter/material.dart';
+
+import '../widgets/week_view_widget.dart';
 
 class WeekViewPage extends StatelessWidget {
   const WeekViewPage({super.key});
@@ -7,7 +8,7 @@ class WeekViewPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: WeekView(),
+      body: WeekViewWidget(),
     );
   }
 }

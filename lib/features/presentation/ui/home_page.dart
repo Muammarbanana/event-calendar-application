@@ -1,8 +1,8 @@
-import 'package:event_calendar_application/core/theme/app_color_manager.dart';
-import 'package:event_calendar_application/core/theme/button_style_manager.dart';
-import 'package:event_calendar_application/features/presentation/ui/event_calendar/day_view_page.dart';
-import 'package:event_calendar_application/features/presentation/ui/event_calendar/month_view_page.dart';
-import 'package:event_calendar_application/features/presentation/ui/event_calendar/week_view_page.dart';
+import '../../../core/theme/app_color_manager.dart';
+import '../../../core/theme/button_style_manager.dart';
+import 'event_calendar/pages/day_view_page.dart';
+import 'event_calendar/pages/month_view_page.dart';
+import 'event_calendar/pages/week_view_page.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
