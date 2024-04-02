@@ -1,6 +1,8 @@
 import 'package:calendar_view/calendar_view.dart';
-import 'package:event_calendar_application/core/theme/app_color_manager.dart';
 import 'package:flutter/material.dart';
+
+import '../../../../../core/theme/app_color_manager.dart';
+import '../pages/event_detail_page.dart';
 
 class DayViewWidget extends StatelessWidget {
   const DayViewWidget({super.key});
@@ -16,13 +18,13 @@ class DayViewWidget extends StatelessWidget {
         color: Theme.of(context).dividerColor,
       ),
       onEventTap: (events, date) {
-        // Navigator.of(context).push(
-        //   MaterialPageRoute(
-        //     builder: (_) => DetailsPage(
-        //       event: events.first,
-        //     ),
-        //   ),
-        // );
+        Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (_) => EventDetailPage(
+              event: events.first,
+            ),
+          ),
+        );
       },
       halfHourIndicatorSettings: HourIndicatorSettings(
         color: Theme.of(context).dividerColor,
